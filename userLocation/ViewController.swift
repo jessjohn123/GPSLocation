@@ -20,6 +20,7 @@ class ViewController: UIViewController , CLLocationManagerDelegate{
     @IBOutlet weak var longText: UILabel!
     let manager = CLLocationManager()
     
+    //Getting user location
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations[0]
         let span:MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
